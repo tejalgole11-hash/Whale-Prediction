@@ -8,7 +8,7 @@ MODEL_PATH = "best_whale_prediction_model.pkl"
 
 @st.cache_resource
 def load_model():
-    return joblib.load(MODEL_PATH)
+    return joblib.load("models/whale_prediction_model.pkl")
 
 def main():
     st.set_page_config(page_title="Mobile Game Whale Prediction", page_icon="🐋", layout="wide")
